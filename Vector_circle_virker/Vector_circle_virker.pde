@@ -7,8 +7,10 @@ void setup() {
   location = new PVector(100,100);
   velocity = new PVector(2,0.3);
 }
+
 void draw() {
   background(255);
+  
   location.add(velocity);
   
   if (location.x > width || location.x < 0) {
